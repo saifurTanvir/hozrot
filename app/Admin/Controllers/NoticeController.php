@@ -2,26 +2,33 @@
 
 namespace App\Admin\Controllers;
 
-use App\Models\Category;
-use App\Models\SubCategory;
+use App\Models\Notice;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Facades\Admin;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use Image;
 
-class CategoryController extends AdminController
+class NoticeController extends AdminController
 {
-    protected $title = 'Category';
+
+    protected $title = 'Notice';
 
     protected function grid()
     {
-        $grid = new Grid(new Category());
+        $grid = new Grid(new Notice());
 
         $grid->column('id', __('Id'));
-        $grid->column('name', __('Name'));
-        $grid->column('detail', __('Detail'));
-        $grid->column('purpose', __('Purpose'));
+        $grid->column('title', __('Title'));
+        $grid->column('detail', __('Detail'))->display(function ($detail){
+            return $detail;
+        });
+        $grid->column('period_start', __('Period start'));
+        $grid->column('period_end', __('Period end'));
+        $grid->column('importance', __('Importance'))->display(function ($importance){
+            return $importance;
+        });
         $grid->column('createdUser.name', __('Created by'));
         $grid->column('updatedUser.name', __('Updated by'));
         $grid->column('created_at', __('Created at'));
@@ -31,32 +38,38 @@ class CategoryController extends AdminController
         $grid->disableFilter();
         $grid->disableRowSelector();
 
+
         return $grid;
     }
 
     protected function detail($id)
     {
-        $show = new Show(Category::findOrFail($id));
+        $show = new Show(Notice::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('name', __('Name'));
-        $show->field('detail', __('Detail'));
-        $show->field('purpose', __('Purpose'));
+        $show->field('title', __('Title'));
+        $show->field('detail', __('Detail'))-unescape();
+        $show->field('period_start', __('Period start'));
+        $show->field('period_end', __('Period end'));
+        $show->field('importance', __('Importance'))->unescape();
         $show->field('createdUser.name', __('Created by'));
         $show->field('updatedUser.name', __('Updated by'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
+
 
         return $show;
     }
 
     protected function form()
     {
-        $form = new Form(new Category());
+        $form = new Form(new Notice());
 
-        $form->text('name', __('Name'));
-        $form->textarea('detail', __('Detail'));
-        $form->text('purpose', __('Purpose'));
+        $form->text('title', __('Title'));
+        $form->ckeditor('detail', __('Detail'));
+        $form->date('period_start', __('Period start'))->default(date('Y-m-d'));
+        $form->date('period_end', __('Period end'))->default(date('Y-m-d'));
+        $form->number('importance', __('Importance'));
 
         $form->saving(function (Form $form) {
             if($form->isCreating()){
@@ -67,12 +80,5 @@ class CategoryController extends AdminController
         });
 
         return $form;
-    }
-
-    public function subCategory()
-    {
-        $q = request()->get('q');
-        return SubCategory::leftJoin('category', 'category.id' , '=', 'subcategory.category_id')
-            ->where('category.name', $q)->pluck('subcategory.name', 'subcategory.name');
     }
 }

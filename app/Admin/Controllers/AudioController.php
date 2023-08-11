@@ -2,9 +2,8 @@
 
 namespace App\Admin\Controllers;
 
+use App\Models\Audio;
 use App\Models\Category;
-use App\Models\SubCategory;
-use App\Models\Video;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Facades\Admin;
 use Encore\Admin\Form;
@@ -12,13 +11,13 @@ use Encore\Admin\Grid;
 use Encore\Admin\Show;
 use Image;
 
-class VideoController extends AdminController
+class AudioController extends AdminController
 {
-    protected $title = 'Video';
+    protected $title = 'Audio';
 
     protected function grid()
     {
-        $grid = new Grid(new Video());
+        $grid = new Grid(new Audio());
 
         $grid->column('id', __('Id'));
         $grid->column('youtube_link', __('Youtube link'))->display(function ($youtubeLink){
@@ -28,7 +27,7 @@ class VideoController extends AdminController
         $grid->column('description', __('Description'))->display(function ($description){
             return $description;
         });
-        $grid->column('thumpnail_img', __('Thumpnail img'))->image("/uploads/");;
+        $grid->column('thumpnail_img', __('Thumpnail img'))->image("/uploads/");
         $grid->column('category', __('Category'));
         $grid->column('subcatefory', __('Subcatefory'));
         $grid->column('place', __('Place'));
@@ -65,7 +64,7 @@ class VideoController extends AdminController
 
     protected function detail($id)
     {
-        $show = new Show(Video::findOrFail($id));
+        $show = new Show(Audio::findOrFail($id));
 
         $show->field('id', __('Id'));
         $show->field('youtube_link', __('Youtube link'))->unescape()->as(function ($youtubeLink){
@@ -94,7 +93,7 @@ class VideoController extends AdminController
 
     protected function form()
     {
-        $form = new Form(new Video());
+        $form = new Form(new Audio());
 
         $category = Category::pluck('name', 'name');
 
