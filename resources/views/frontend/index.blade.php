@@ -14,16 +14,28 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="sigma_box primary-bg banner-cta">
-                  <h1 class="text-white title">KNOW YHE REAL TAFSEER OF QUR'AN</h1>
-                  <p class="blockquote light light-border mb-0"> As long as there are people coming to the mosque, Islam will keep on spreading the word of peace.</p>
+                  <h1 class="text-white title">পীর মাওলানা ড. মুশতাক আহমদ</h1>
+                  <p class="blockquote light light-border mb-0">
+                      ডেপুটি ডিরেক্টর,
+                      ইসলামিক ফাউন্ডেশন, ধর্মবিষয়ক মন্ত্রণালয়, গণপ্রজাতন্ত্রী বাংলাদেশ সরকার।
+                      সম্মানিত পীর সাহেব
+                      খানকা শায়খ যাকারিয়্যা ঢাকা, বাংলাদেশ।
+                      মুহতামিম,
+                      জামিয়া শায়খ যাকারিয়্যা ঢাকা।
+                      কাচকুরা, উত্তরখান, ঢাকা, বাংলাদেশ
+                      খতিব,
+                      তেজগাঁও রেলস্টেশন জামে মসজিদ কমপ্লেক্স।
+                      শাইখুল হাদীস,
+                      তেজগাঁও রেলওয়ে জামিয়া ইসলামিয়া, তেজগাঁও, ঢাকা।
+                  </p>
                   <div class="section-button d-flex align-items-center">
-                    <a href="contact-us.html" class="sigma_btn-custom secondary">Join Today <i class="far fa-arrow-right"></i>
+                    <a href="contact-us.html" class="sigma_btn-custom secondary"> Facebook <i class="far fa-arrow-right"></i>
                       <span></span>
                       <span></span>
                       <span></span>
                       <span></span>
                      </a>
-                    <a href="donation.html" class="ms-3 sigma_btn-custom light text-white">Donate Us <i class="far fa-arrow-right"></i>
+                    <a href="donation.html" class="ms-3 sigma_btn-custom light text-white">Youtube <i class="far fa-arrow-right"></i>
                       <span></span>
                       <span></span>
                       <span></span>
@@ -38,37 +50,48 @@
       </div>
       <!-- Banner Item End -->
 
-      <!-- Banner Item Start -->
-      <div class="sigma_banner-slider-inner">
-        <div class="sigma_banner-text">
-          <div class="container position-relative">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="sigma_box primary-bg banner-cta">
-                  <h1 class="text-white title">ACCESS TO ISLAMIC EDUCATION</h1>
-                  <p class="blockquote light light-border mb-0"> As long as there are people coming to the mosque, Islam will keep on spreading the word of peace.</p>
-                  <div class="section-button d-flex align-items-center">
-                    <a href="contact-us.html" class="sigma_btn-custom secondary">Join Today
-                      <i class="far fa-arrow-right"></i>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </a>
-                    <a href="donation.html" class="ms-3 sigma_btn-custom light text-white">Donate Us <i class="far fa-arrow-right"></i>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </a>
-                  </div>
+        <!-- Banner Item Start -->
+        <div class="sigma_banner-slider-inner">
+            <div class="sigma_banner-text">
+                <div class="container position-relative">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="sigma_box primary-bg banner-cta">
+                                <h1 class="text-white title">পীর মাওলানা ড. মুশতাক আহমদ</h1>
+                                <p class="blockquote light light-border mb-0">
+                                    ডেপুটি ডিরেক্টর,
+                                    ইসলামিক ফাউন্ডেশন, ধর্মবিষয়ক মন্ত্রণালয়, গণপ্রজাতন্ত্রী বাংলাদেশ সরকার।
+                                    সম্মানিত পীর সাহেব
+                                    খানকা শায়খ যাকারিয়্যা ঢাকা, বাংলাদেশ।
+                                    মুহতামিম,
+                                    জামিয়া শায়খ যাকারিয়্যা ঢাকা।
+                                    কাচকুরা, উত্তরখান, ঢাকা, বাংলাদেশ
+                                    খতিব,
+                                    তেজগাঁও রেলস্টেশন জামে মসজিদ কমপ্লেক্স।
+                                    শাইখুল হাদীস,
+                                    তেজগাঁও রেলওয়ে জামিয়া ইসলামিয়া, তেজগাঁও, ঢাকা।
+                                </p>
+                                <div class="section-button d-flex align-items-center">
+                                    <a href="contact-us.html" class="sigma_btn-custom secondary"> Facebook <i class="far fa-arrow-right"></i>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                    <a href="donation.html" class="ms-3 sigma_btn-custom light text-white">Youtube <i class="far fa-arrow-right"></i>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <!-- Banner Item End -->
+        <!-- Banner Item End -->
 
     </div>
 

@@ -15,4 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('frontend.index');
-});
+})->name('home');
+
+Route::get('/about_us', function () {
+    return view('frontend.about_us');
+})->name('about_us');
+
+Route::get('/boyan', function () {
+    return view('frontend.boyan');
+})->name('boyan');
+
+Route::get('/blog_grid', function () {
+    return view('frontend.blog_grid');
+})->name('blog_grid');

@@ -27,6 +27,8 @@ Route::group([
     $router->resource('shaekhs', ShaekhController::class);
     $router->resource('notices', NoticeController::class);
     $router->resource('events', EventController::class);
+    $router->resource('carosels', CaroselController::class);
+    $router->resource('family', ProfileFamilyController::class);
 
     $router->get('/category_wise_sub_category', 'CategoryController@subCategory');
 
