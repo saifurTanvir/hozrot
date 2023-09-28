@@ -25,9 +25,13 @@ Route::get('/boyan', function () {
     return view('frontend.boyan');
 })->name('boyan');
 
-Route::get('/blog_grid', function () {
-    return view('frontend.blog_grid');
+Route::get('/article', function () {
+    return view('frontend.article');
 })->name('blog_grid');
+
+Route::get('/article_detail', function () {
+    return view('frontend.article_detail');
+})->name('article_detail');
 
 Route::get('/books', function () {
     return view('frontend.books');
@@ -37,6 +41,10 @@ Route::get('/khanka', function () {
     return view('frontend.khanka');
 })->name('khanka');
 
+Route::get('/khanka_detail', function () {
+    return view('frontend.khanka_detail');
+})->name('khanka_detail');
+
 Route::get('/shobgujari', function () {
     return view('frontend.shobgujari');
 })->name('shobgujari');
@@ -44,6 +52,10 @@ Route::get('/shobgujari', function () {
 Route::get('/madrasa', function () {
     return view('frontend.madrasa');
 })->name('madrasa');
+
+Route::get('/madrasa_detail', function () {
+    return view('frontend.madrasa_detail');
+})->name('madrasa_detail');
 
 Route::get('/mahfil', function () {
     return view('frontend.mahfil');
