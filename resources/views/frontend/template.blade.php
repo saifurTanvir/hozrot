@@ -434,7 +434,7 @@
                 <a href="{{route('home')}}">হোম</a>
               </li>
               <li class="menu-item menu-item-has-children">
-                  <a href="#">কিতাব</a>
+                  <a href="{{route('books')}}">কিতাব</a>
                   <ul class="sub-menu">
                       <li class="menu-item"> <a href="ministries.html">তাসাউফ</a> </li>
                       <li class="menu-item"> <a href="ministry-details.html">তাফসির</a> </li>
@@ -443,7 +443,7 @@
                   </ul>
               </li>
               <li class="menu-item menu-item-has-children">
-                  <a href="#">খানকাহ</a>
+                  <a href="{{route('khanka')}}">খানকাহ</a>
                   <ul class="sub-menu">
                       <li class="menu-item"> <a href="ministries.html">নকশে কদম</a> </li>
                       <li class="menu-item"> <a href="ministry-details.html">মূলনীতি</a> </li>
@@ -452,10 +452,10 @@
                   </ul>
               </li>
               <li class="menu-item">
-                  <a href="#">শবগুজারী</a>
+                  <a href="{{route('shobgujari')}}">শবগুজারী</a>
               </li>
               <li class="menu-item menu-item-has-children">
-                <a href="#">মাদ্রাসা</a>
+                <a href="{{route('madrasa')}}">মাদ্রাসা</a>
                 <ul class="sub-menu">
                   <li class="menu-item">
                     <a href="blog-grid.html">তেজগাও রেলওয়ে জামিয়া</a>
@@ -464,10 +464,10 @@
                 </ul>
               </li>
               <li class="menu-item">
-                <a href="contact-us.html">মাহফিল</a>
+                <a href="{{route('mahfil')}}">মাহফিল</a>
               </li>
               <li class="menu-item">
-                <a href="contact-us.html">প্রশ্ন-উত্তর</a>
+                  <a href="{{route('donation')}}">ডোনেশান</a>
               </li>
               <li class="menu-item">
                 <a href="contact-us.html">যোগাযোগ</a>
