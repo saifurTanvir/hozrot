@@ -270,87 +270,46 @@
 
     <!-- Menu -->
     <ul>
+        <li class="menu-item">
+            <a href="{{route('home')}}">হোম</a>
+        </li>
         <li class="menu-item menu-item-has-children">
-            <a href="#">Home</a>
+            <a href="{{route('books')}}">কিতাব</a>
             <ul class="sub-menu">
-                <li class="menu-item"><a href="index-2.html">Home v1</a></li>
-                <li class="menu-item"><a href="home-v2.html">Home v2</a></li>
-                <li class="menu-item"><a href="home-v3.html">Home v3</a></li>
+                @foreach($categories AS $category)
+                    <li class="menu-item"><a href="ministries.html">{{$category->name}}</a></li>
+                @endforeach
             </ul>
         </li>
         <li class="menu-item menu-item-has-children">
-            <a href="#">Blog</a>
+            <a href="{{route('khanka')}}">খানকাহ</a>
             <ul class="sub-menu">
-                <li class="menu-item">
-                    <a href="blog-grid.html">Blog Archive</a>
-                </li>
-                <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
-            </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-            <a href="#">Pages</a>
-            <ul class="sub-menu">
-                <li class="menu-item"><a href="about-us.html">About Us</a></li>
-                <li class="menu-item"><a href="broadcast.html">Broadcast</a></li>
-                <li class="menu-item menu-item-has-children">
-                    <a href="#">Volunteers</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="volunteers.html">Volunteers</a>
-                        </li>
-                        <li class="menu-item"><a href="volunteer-detail.html">Volunteer Details</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item"><a href="faq.html">FAQ</a></li>
-            </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-            <a href="#">Service</a>
-            <ul class="sub-menu">
-                <li class="menu-item"><a href="services.html">Service Style 1</a></li>
-                <li class="menu-item"><a href="services-2.html">Service Style 2</a></li>
-            </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-            <a href="#">Donation</a>
-            <ul class="sub-menu">
-                <li class="menu-item"><a href="donation.html">Donation</a></li>
-                <li class="menu-item"><a href="donation-archive.html">Donation Archive</a></li>
-            </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-            <a href="#">Events</a>
-            <ul class="sub-menu">
-                <li class="menu-item"><a href="events.html">Events</a></li>
-                <li class="menu-item"><a href="event-details.html">Event Detail</a></li>
-            </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-            <a href="#">Sermons</a>
-            <ul class="sub-menu">
-                <li class="menu-item"><a href="sermons.html">Sermon</a></li>
-                <li class="menu-item"><a href="sermon-details.html">Sermon Details</a></li>
-            </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-            <a href="#">Ministry</a>
-            <ul class="sub-menu">
-                <li class="menu-item"><a href="ministries.html">Ministry</a></li>
-                <li class="menu-item"><a href="ministry-details.html">Ministry Details</a></li>
-            </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-            <a href="#">Shop</a>
-            <ul class="sub-menu">
-                <li class="menu-item"><a href="shop.html">Shop</a></li>
-                <li class="menu-item"><a href="product-single.html">Product Details</a></li>
-                <li class="menu-item"><a href="cart.html">Cart</a></li>
-                <li class="menu-item"><a href="checkout.html">Checkout</a></li>
-                <li class="menu-item"><a href="wishlist.html">Wishlist</a></li>
+                <li class="menu-item"><a href="{{route('khanka')}}">নকশে কদম</a></li>
+                <li class="menu-item"><a href="{{route('khanka')}}">মূলনীতি</a></li>
+                <li class="menu-item"><a href="{{route('khanka')}}">নেসাব</a></li>
+                <li class="menu-item"><a href="{{route('khanka')}}">লোকেশান</a></li>
             </ul>
         </li>
         <li class="menu-item">
-            <a href="contact-us.html">Contact</a>
+            <a href="{{route('shobgujari')}}">শবগুজারী</a>
+        </li>
+        <li class="menu-item menu-item-has-children">
+            <a href="{{route('madrasa')}}">মাদ্রাসা</a>
+            <ul class="sub-menu">
+                <li class="menu-item">
+                    <a href="{{route('madrasa')}}">তেজগাও রেলওয়ে জামিয়া</a>
+                    <a href="{{route('madrasa')}}">শায়েখ জাকারিয়া মাদ্রাসা</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="{{route('mahfil')}}">মাহফিল</a>
+        </li>
+        <li class="menu-item">
+            <a href="{{route('donation')}}">ডোনেশান</a>
+        </li>
+        <li class="menu-item">
+            <a href="contact-us.html">যোগাযোগ</a>
         </li>
     </ul>
 
@@ -394,10 +353,9 @@
                             <li class="menu-item menu-item-has-children">
                                 <a href="{{route('blog_grid')}}">প্রবন্ধ</a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item"><a href="ministries.html">তাসাউফ</a></li>
-                                    <li class="menu-item"><a href="ministry-details.html">তাফসির</a></li>
-                                    <li class="menu-item"><a href="ministry-details.html">নামাজ</a></li>
-                                    <li class="menu-item"><a href="ministry-details.html">ইতেকাফ</a></li>
+                                    @foreach($categories AS $category)
+                                        <li class="menu-item"><a href="ministries.html">{{$category->name}}</a></li>
+                                    @endforeach
                                 </ul>
                             </li>
                         </ul>
@@ -441,19 +399,18 @@
                     <li class="menu-item menu-item-has-children">
                         <a href="{{route('books')}}">কিতাব</a>
                         <ul class="sub-menu">
-                            <li class="menu-item"><a href="ministries.html">তাসাউফ</a></li>
-                            <li class="menu-item"><a href="ministry-details.html">তাফসির</a></li>
-                            <li class="menu-item"><a href="ministry-details.html">নামাজ</a></li>
-                            <li class="menu-item"><a href="ministry-details.html">ইতেকাফ</a></li>
+                            @foreach($categories AS $category)
+                                <li class="menu-item"><a href="{{route('books')}}">{{$category->name}}</a></li>
+                            @endforeach
                         </ul>
                     </li>
                     <li class="menu-item menu-item-has-children">
                         <a href="{{route('khanka')}}">খানকাহ</a>
                         <ul class="sub-menu">
-                            <li class="menu-item"><a href="ministries.html">নকশে কদম</a></li>
-                            <li class="menu-item"><a href="ministry-details.html">মূলনীতি</a></li>
-                            <li class="menu-item"><a href="ministry-details.html">নেসাব</a></li>
-                            <li class="menu-item"><a href="ministry-details.html">লোকেশান</a></li>
+                            <li class="menu-item"><a href="{{route('khanka')}}">নকশে কদম</a></li>
+                            <li class="menu-item"><a href="{{route('khanka')}}">মূলনীতি</a></li>
+                            <li class="menu-item"><a href="{{route('khanka')}}">নেসাব</a></li>
+                            <li class="menu-item"><a href="{{route('khanka')}}">লোকেশান</a></li>
                         </ul>
                     </li>
                     <li class="menu-item">
@@ -463,8 +420,8 @@
                         <a href="{{route('madrasa')}}">মাদ্রাসা</a>
                         <ul class="sub-menu">
                             <li class="menu-item">
-                                <a href="blog-grid.html">তেজগাও রেলওয়ে জামিয়া</a>
-                                <a href="blog-grid.html">শায়েখ জাকারিয়া মাদ্রাসা</a>
+                                <a href="{{route('madrasa')}}">তেজগাও রেলওয়ে জামিয়া</a>
+                                <a href="{{route('madrasa')}}">শায়েখ জাকারিয়া মাদ্রাসা</a>
                             </li>
                         </ul>
                     </li>
@@ -475,7 +432,7 @@
                         <a href="{{route('donation')}}">ডোনেশান</a>
                     </li>
                     <li class="menu-item">
-                        <a href="contact-us.html">যোগাযোগ</a>
+                        <a href="{{route('contact-us')}}">যোগাযোগ</a>
                     </li>
                 </ul>
 
@@ -580,7 +537,7 @@
                         <li><a href="checkout.html">Checkout</a></li>
                         <li><a href="donation-archive.html">Donation</a></li>
                         <li><a href="contact-us.html">Contact Us</a></li>
-                        <li><a href="blog-grid.html">Blog</a></li>
+                        <li><a href="blog-grid.html">Blogggg</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 footer-widget widget-ig">

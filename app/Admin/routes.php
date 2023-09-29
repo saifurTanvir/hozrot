@@ -29,6 +29,9 @@ Route::group([
     $router->resource('events', EventController::class);
     $router->resource('carosels', CaroselController::class);
     $router->resource('family', ProfileFamilyController::class);
+    $router->resource('headers', HeaderController::class);
+    $router->resource('page_infos', PageInfoController::class);
+    $router->resource('footers', FooterController::class);
 
     $router->get('/category_wise_sub_category', 'CategoryController@subCategory');
 

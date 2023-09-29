@@ -18,7 +18,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/about_us', function () {
-    return view('frontend.about_us');
+    $data = "Subhanallah";
+    return view('frontend.about_us', compact('data'));
 })->name('about_us');
 
 Route::get('/boyan', function () {

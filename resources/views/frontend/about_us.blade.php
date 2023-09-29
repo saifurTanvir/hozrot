@@ -57,7 +57,7 @@
   <!-- Basic Info End -->
 
   <!-- Shaekh's Period Info -->
-  <div class="section light-bg">
+  <div class="section light-bg" id="shaekhs">
     <div class="container">
         <div class="section-title mb-0 text-start">
             <p class="subtitle">শায়েখদের সোহবত</p>
@@ -123,7 +123,7 @@
 
 
   <!-- Shaekh's Info -->
-  <div class="section section-padding">
+  <div class="section section-padding" id="intro">
       <div class="container">
           <div class="section-title mb-0 text-start">
               <p class="subtitle">শায়েখদগন</p>
@@ -214,7 +214,7 @@
   <!-- Shaekh's Period End -->
 
   <!-- Characteristic Start -->
-  <section class="section">
+  <section class="section" id="character">
     <div class="container">
 
       <div class="row align-items-center">
@@ -271,7 +271,7 @@
   <!-- Characteristic End -->
 
   <!-- Education Info -->
-  <div class="section light-bg">
+  <div class="section light-bg" id="education">
       <div class="container">
           <div class="section-title mb-0 text-start">
               <p class="subtitle">লেখাপড়া</p>
@@ -337,7 +337,7 @@
 
 
   <!-- Khulafa Start -->
-  <div class="section section-padding">
+  <div class="section section-padding" id="family">
       <div class="container">
           <div class="section-title mb-0 text-start">
               <p class="subtitle">হযরতের ইজাজত প্রাপ্ত খোলাফাগন</p>
@@ -526,7 +526,7 @@
   <!-- Khulafa End -->
 
   <!-- Shaekh's Family -->
-  <div class="section light-bg">
+  <div class="section light-bg" id="khulafa">
       <div class="container">
           <div class="section-title mb-0 text-start">
               <p class="subtitle">শায়েখের পূর্বপুরুষগন</p>
