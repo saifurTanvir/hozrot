@@ -18,10 +18,15 @@ class ProfileController extends AdminController
     {
         $grid = new Grid(new Profile());
 
-        $grid->column('id', __('Id'));
+        $grid->column('salutation', __('Salutation'));
         $grid->column('name', __('Name'));
-        $grid->column('title', __('Title'));
-        $grid->column('khedmot', __('Khedmot'))->display(function ($khedmot){
+        $grid->column('detail', __('Detail'))->display(function ($khedmot){
+            return $khedmot;
+        });
+        $grid->column('occupation', __('Occupation'))->display(function ($khedmot){
+            return $khedmot;
+        });
+        $grid->column('khedmot', __('khedmot'))->display(function ($khedmot){
             return $khedmot;
         });
         $grid->column('photo', __('Main Photo'))->image("/uploads/");
@@ -47,9 +52,11 @@ class ProfileController extends AdminController
         $show = new Show(Profile::findOrFail($id));
 
         $show->field('id', __('Id'));
+        $show->field('salutation', __('Salutation'));
         $show->field('name', __('Name'));
-        $show->field('title', __('Section Title'));
-        $show->field('khedmot', __('Khedmot'))->unescape();
+        $show->field('detail', __('Detail'))->unescape();
+        $show->field('occupation', __('Occupation'))->unescape();
+        $show->field('khedmot', __('khedmot'))->unescape();
         $show->field('dob', __('Dob'));
         $show->field('photo', __('Main Photo'))->image("/uploads/");
         $show->field('photo_1', __('Photo 1'))->image("/uploads/");
@@ -70,10 +77,11 @@ class ProfileController extends AdminController
     {
         $form = new Form(new Profile());
 
+        $form->text('salutation', __('Salutation'));
         $form->text('name', __('Name'));
-        $form->text('title', __('Section Title'));
-        $form->ckeditor('salutation', __('Salutation'));
-        $form->ckeditor('khedmot', __('Khedmot'));
+        $form->ckeditor('detail', __('Detail'));
+        $form->ckeditor('occupation', __('Occupation'));
+        $form->ckeditor('khedmot', __('khedmot'));
         $form->date('dob', __('Dob'))->default(date('Y-m-d'));
         $form->image('photo', __('Main Photo'));
         $form->image('photo_1', __('Photo 1'));

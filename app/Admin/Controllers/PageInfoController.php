@@ -21,6 +21,7 @@ class PageInfoController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('title', __('Title'));
+        $grid->column('page_name', __('page_name'));
         $grid->column('image', __('Image'))->image("/uploads/");
         $grid->column('description', __('Description'))->display(function ($detail){
             return $detail;
@@ -43,6 +44,7 @@ class PageInfoController extends AdminController
 
         $show->field('id', __('Id'));
         $show->field('title', __('Title'));
+        $show->field('page_name', __('Page Name'));
         $show->field('image', __('Image'))->image("/uploads/");
         $show->field('description', __('Description'))->unescape();
         $show->field('createdUser.name', __('Created by'));
@@ -59,6 +61,23 @@ class PageInfoController extends AdminController
 
         $form->image('image', __('Image'));
         $form->text('title', __('Title'));
+        $form->select('page_name', __('Page Name'))->options([
+            'about_us' => 'about_us',
+            'shayekh_detail' => 'shayekh_detail',
+            'boyan' => 'boyan',
+            'article' => 'article',
+            'article_detail' => 'article_detail',
+            'books' => 'books',
+            'khanka' => 'khanka',
+            'khanka_detail' => 'khanka_detail',
+            'shobgujari' => 'shobgujari',
+            'madrasa' => 'madrasa',
+            'madrasa_detail' => 'madrasa_detail',
+            'mahfil' => 'mahfil',
+            'faq' => 'faq',
+            'contact-us' => 'contact-us',
+            'donation' => 'donation'
+        ]);
         $form->ckeditor('description', __('Description'));
         $form->saving(function (Form $form) {
             if($form->isCreating()){

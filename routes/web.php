@@ -14,13 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend.index');
+    return view('frontend.about_us');
 })->name('home');
 
 Route::get('/about_us', function () {
-    $data = "Subhanallah";
-    return view('frontend.about_us', compact('data'));
+    $basicInfo = \App\Models\Profile::orderBy('id')->first();
+    $shayekhs = \App\Models\Shaekh::orderBy('id')->get();
+    return view('frontend.about_us', compact('basicInfo', 'shayekhs'));
 })->name('about_us');
+
+Route::get('/shaekh_detail/{id}', function ($id) {
+    $shayekh = \App\Models\Shaekh::where('id', $id)->first();
+    return view('frontend.shaekh_detail', compact('shayekh', ));
+})->name('shaekh_detail');
 
 Route::get('/boyan', function () {
     return view('frontend.boyan');

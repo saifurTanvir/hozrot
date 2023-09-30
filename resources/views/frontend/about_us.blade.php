@@ -13,12 +13,12 @@
           <div class="sigma_img-box">
             <div class="row">
               <div class="col-lg-6">
-                <img src="assets/img/service/details/5.jpg" alt="service">
-                <img class="ms-0" src="assets/img/service/details/6.jpg" alt="service">
+                <img src="{{asset('uploads/'.$basicInfo->photo_1)}}" alt="service">
+                <img class="ms-0" src="{{asset('uploads/'.$basicInfo->photo_2)}}" alt="service">
               </div>
               <div class="col-lg-6 mt-0 mt-lg-5">
-                <img src="assets/img/service/details/7.jpg" alt="service">
-                <img class="ms-0" src="assets/img/service/details/8.jpg" alt="service">
+                <img src="{{asset('uploads/'.$basicInfo->photo_3)}}" alt="service">
+                <img class="ms-0" src="{{asset('uploads/'.$basicInfo->photo_4)}}" alt="service">
               </div>
             </div>
           </div>
@@ -26,17 +26,19 @@
         <div class="col-lg-6">
           <div class="me-lg-30">
             <div class="section-title mb-0 text-start">
-              <p class="subtitle">ALLAH HELP THOSE WHO HELP THEMSELVES</p>
-              <h4 class="title">The Mosque in which people pray for Allah.</h4>
+              <p class="subtitle">{{$basicInfo->salutation}}</p>
+              <h4 class="title">{{$basicInfo->name}}</h4>
             </div>
-            <p class="blockquote bg-transparent"> Promoting a comprehensive Islamic way of life based on the Holy Quran and the Sunnah of Prophet Muhammad. </p>
+            <br>
+            <p class=" bg-transparent"> {!! $basicInfo->detail !!} </p>
+            <br>
             <div class="sigma_icon-block icon-block-3">
               <div class="icon-wrapper">
                 <img src="assets/img/textures/icons/1.png" alt="">
               </div>
               <div class="sigma_icon-block-content">
-                <h5> Mosque </h5>
-                <p>Grand islamic gathering with chicago vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt.</p>
+                <h5> পেশা </h5>
+                <p>{!! $basicInfo->occupation !!}</p>
               </div>
             </div>
             <div class="sigma_icon-block icon-block-3">
@@ -44,8 +46,8 @@
                 <img src="assets/img/textures/icons/2.png" alt="">
               </div>
               <div class="sigma_icon-block-content">
-                <h5> Sermons </h5>
-                <p>Grand islamic gathering with chicago vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt.</p>
+                <h5> খেদমত </h5>
+                <p>{!! $basicInfo->khedmot !!}</p>
               </div>
             </div>
           </div>
@@ -64,56 +66,20 @@
         </div>
       <div class="sigma_timeline">
 
-        <div class="row g-0 justify-content-end justify-content-md-around align-items-start sigma_timeline-nodes">
-          <div class="col-12 col-md-5 order-3 order-md-1 sigma_timeline-content">
-            <h4>Islam is the correct way to live</h4>
-            <p>May Allah bless you! Thank you. Those who (in charity) spend of their goods by night and by day, in secret and in public, have their reward with their Lord The Weekend School of the Islamic Center of Allah is committed to providing quality
-              Islamic Education. </p>
-          </div>
-          <div class="col-2 col-sm-1 px-md-3 order-2 sigma_timeline-image text-md-center">
-            <i class="far fa-circle"></i>
-          </div>
-          <div class="col-12 col-md-5 order-1 order-md-3 pb-3 sigma_timeline-date">
-            <span>2022</span><br><span class="sigma_timeline-month">JUN 1</span>
-          </div>
-        </div>
-        <div class="row g-0 justify-content-end justify-content-md-around align-items-start sigma_timeline-nodes">
-          <div class="col-12 col-md-5 order-3 order-md-1 sigma_timeline-content">
-            <h4>We chose to try to live that way</h4>
-            <p>The Weekend School of the Islamic Center of Allah is committed to providing quality Islamic Education according to the Quran and the Sunnah of the Prophet Mohammed (Peace Be upon Him) to a diverse student population</p>
-          </div>
-          <div class="col-2 col-sm-1 px-md-3 order-2 sigma_timeline-image text-md-center">
-            <i class="far fa-circle"></i>
-          </div>
-          <div class="col-12 col-md-5 order-1 order-md-3 pb-3 sigma_timeline-date">
-            <span>2022</span><br><span class="sigma_timeline-month">JUN 1</span>
-          </div>
-        </div>
-        <div class="row g-0 justify-content-end justify-content-md-around align-items-start sigma_timeline-nodes">
-          <div class="col-12 col-md-5 order-3 order-md-1 sigma_timeline-content">
-            <h4>Islam is the correct way to live</h4>
-            <p>May Allah bless you! Thank you. Those who (in charity) spend of their goods by night and by day, in secret and in public, have their reward with their Lord The Weekend School of the Islamic Center of Allah is committed to providing quality
-              Islamic Education. </p>
-          </div>
-          <div class="col-2 col-sm-1 px-md-3 order-2 sigma_timeline-image text-md-center">
-            <i class="far fa-circle"></i>
-          </div>
-          <div class="col-12 col-md-5 order-1 order-md-3 pb-3 sigma_timeline-date">
-            <span>2022</span><br><span class="sigma_timeline-month">JUN 1</span>
-          </div>
-        </div>
-        <div class="row g-0 justify-content-end justify-content-md-around align-items-start sigma_timeline-nodes">
-          <div class="col-12 col-md-5 order-3 order-md-1 sigma_timeline-content">
-            <h4>We chose to try to live that way</h4>
-            <p>The Weekend School of the Islamic Center of Allah is committed to providing quality Islamic Education according to the Quran and the Sunnah of the Prophet Mohammed (Peace Be upon Him) to a diverse student population</p>
-          </div>
-          <div class="col-2 col-sm-1 px-md-3 order-2 sigma_timeline-image text-md-center">
-            <i class="far fa-circle"></i>
-          </div>
-          <div class="col-12 col-md-5 order-1 order-md-3 pb-3 sigma_timeline-date">
-            <span>2022</span><br><span class="sigma_timeline-month">JUN 1</span>
-          </div>
-        </div>
+        @foreach($shayekhs AS $shayekh)
+            <div class="row g-0 justify-content-end justify-content-md-around align-items-start sigma_timeline-nodes">
+              <div class="col-12 col-md-5 order-3 order-md-1 sigma_timeline-content">
+                <h4>{{$shayekh->name}}</h4>
+                <p>{!! $shayekh->story !!} </p>
+              </div>
+              <div class="col-2 col-sm-1 px-md-3 order-2 sigma_timeline-image text-md-center">
+                <i class="far fa-circle"></i>
+              </div>
+              <div class="col-12 col-md-5 order-1 order-md-3 pb-3 sigma_timeline-date">
+                <span>{{date('Y', strtotime($shayekh->period_start))}}</span><br><span class="sigma_timeline-month">{{date('M d', strtotime($shayekh->period_start))}}</span>
+              </div>
+            </div>
+         @endforeach
 
       </div>
 
@@ -130,83 +96,34 @@
           </div>
           <div class="row">
 
-              <div class="col-lg-4 col-md-6">
-                  <a href="sermon-details.html" class="sigma_service style-2">
-                      <div class="sigma_service-thumb">
-                          <img src="assets/img/service/5.jpg" alt="img">
-                          <i class="flaticon-mosque"></i>
-                      </div>
-                      <div class="sigma_service-body">
-                          <h5>Parent Education</h5>
-                          <p>The Shaha is not just a mosque for prayers rather it is a community center for all. </p>
-                      </div>
-                  </a>
-              </div>
+              @foreach($shayekhs AS $shayekh)
+                  <div class="col-lg-4 col-md-6">
+                      <a href="{{route('shaekh_detail', [$shayekh->id])}}" class="sigma_service style-2">
+                          <div class="sigma_service-thumb">
+                              <img src="assets/img/service/5.jpg" alt="img">
+                              <i class="flaticon-mosque"></i>
+                          </div>
+                          <div class="sigma_service-body">
+                              <h5>{{$shayekh->name}}</h5>
+                              <p>{!! mb_substr($shayekh->detail, 0, 150); !!} </p>
+                          </div>
+                      </a>
+                  </div>
+              @endforeach
 
-              <div class="col-lg-4 col-md-6">
-                  <a href="sermon-details.html" class="sigma_service style-2">
-                      <div class="sigma_service-thumb">
-                          <img src="assets/img/service/6.jpg" alt="img">
-                          <i class="flaticon-quran"></i>
-                      </div>
-                      <div class="sigma_service-body">
-                          <h5>Hadith & Sunnah</h5>
-                          <p>The Shaha is not just a mosque for prayers rather it is a community center for all. </p>
-                      </div>
-                  </a>
-              </div>
 
-              <div class="col-lg-4 col-md-6">
-                  <a href="sermon-details.html" class="sigma_service style-2">
-                      <div class="sigma_service-thumb">
-                          <img src="assets/img/service/7.jpg" alt="img">
-                          <i class="flaticon-islamic-new-year"></i>
-                      </div>
-                      <div class="sigma_service-body">
-                          <h5>Find A Mosque</h5>
-                          <p>The Shaha is not just a mosque for prayers rather it is a community center for all. </p>
-                      </div>
-                  </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                  <a href="sermon-details.html" class="sigma_service style-2">
-                      <div class="sigma_service-thumb">
-                          <img src="assets/img/service/8.jpg" alt="img">
-                          <i class="flaticon-islam"></i>
-                      </div>
-                      <div class="sigma_service-body">
-                          <h5>Video Sermons</h5>
-                          <p>The Shaha is not just a mosque for prayers rather it is a community center for all. </p>
-                      </div>
-                  </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                  <a href="sermon-details.html" class="sigma_service style-2">
-                      <div class="sigma_service-thumb">
-                          <img src="assets/img/service/9.jpg" alt="img">
-                          <i class="flaticon-islamic-1"></i>
-                      </div>
-                      <div class="sigma_service-body">
-                          <h5>Charity & Donation</h5>
-                          <p>The Shaha is not just a mosque for prayers rather it is a community center for all. </p>
-                      </div>
-                  </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                  <a href="sermon-details.html" class="sigma_service style-2">
-                      <div class="sigma_service-thumb">
-                          <img src="assets/img/service/10.jpg" alt="img">
-                          <i class="flaticon-islamic-5"></i>
-                      </div>
-                      <div class="sigma_service-body">
-                          <h5>News & Events</h5>
-                          <p>The Shaha is not just a mosque for prayers rather it is a community center for all. </p>
-                      </div>
-                  </a>
-              </div>
+{{--              <div class="col-lg-4 col-md-6">--}}
+{{--                  <a href="sermon-details.html" class="sigma_service style-2">--}}
+{{--                      <div class="sigma_service-thumb">--}}
+{{--                          <img src="assets/img/service/10.jpg" alt="img">--}}
+{{--                          <i class="flaticon-islamic-5"></i>--}}
+{{--                      </div>--}}
+{{--                      <div class="sigma_service-body">--}}
+{{--                          <h5>News & Events</h5>--}}
+{{--                          <p>The Shaha is not just a mosque for prayers rather it is a community center for all. </p>--}}
+{{--                      </div>--}}
+{{--                  </a>--}}
+{{--              </div>--}}
 
           </div>
       </div>

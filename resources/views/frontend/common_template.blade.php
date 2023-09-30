@@ -7,25 +7,25 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mircco - Mosque HTML Template</title>
+    <title>{{$pageInfo->title}}</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
 
     <!-- partial:partial/__stylesheets.html -->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/plugins/slick.css">
-    <link rel="stylesheet" href="assets/css/plugins/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/plugins/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="{{asset('assets/css/plugins/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/plugins/animate.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/plugins/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/plugins/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/plugins/slick-theme.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/plugins/ion.rangeSlider.min.css')}}">
 
     <!-- Icon Fonts -->
-    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
-    <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset('assets/fonts/flaticon/flaticon.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/plugins/font-awesome.min.css')}}">
     <!-- Template Style sheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
     <!-- partial -->
 
 </head>
@@ -35,7 +35,7 @@
 <!-- Preloader Start -->
 <div class="sigma_preloader">
     <div class="preloader-image">
-        <img src="assets/img/islam.svg" alt="preloader">
+        <img src="{{asset('assets/img/islam.svg')}}" alt="preloader">
     </div>
 </div>
 <!-- Preloader End -->
@@ -54,7 +54,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="sigma_product-single-thumb">
-                            <img src="assets/img/products/new/1.jpg" alt="product">
+                            <img src="{{asset('assets/img/products/new/1.jpg')}}" alt="product">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -178,7 +178,7 @@
 <!-- partial:partia/__mobile-nav.html -->
 <aside class="sigma_aside sigma_aside-left">
 
-    <a class="navbar-brand" href="index-2.html"> <img src="assets/img/logo.png" alt="logo"> </a>
+    <a class="navbar-brand" href="index-2.html"> <img src="{{asset('assets/img/logo.png')}}" alt="logo"> </a>
 
     <!-- Menu -->
     <ul>
@@ -269,7 +269,7 @@
             <!-- Logo Start -->
             <div class="sigma_logo-wrapper">
                 <a class="navbar-brand" href="index-2.html">
-                    <img src="assets/img/logo.png" alt="logo">
+                    <img src="{{asset('assets/img/logo.png')}}" alt="logo">
                 </a>
             </div>
             <!-- Logo End -->
@@ -318,7 +318,7 @@
                                 </a>
                             </li>
                             <li class="menu-item menu-item-has-children d-flex align-items-center">
-                                <img src="assets/img/flag.png" alt="img">
+                                <img src="{{asset('assets/img/flag.png')}}" alt="img">
                                 <a href="#" class="m-0"> Language</a>
                                 <ul class="sub-menu sub-menu-left">
                                     <li><a href="#">English</a></li>
@@ -417,19 +417,18 @@
 
 
 <!-- partial:partia/__subheader.html -->
-<div class="sigma_subheader dark-overlay dark-overlay-2" style="background-image: url(assets/img/subheader.jpg)">
+<div class="sigma_subheader dark-overlay dark-overlay-2" style="background-image: url('{{asset('assets/img/subheader.jpg')}}')">
 
     <div class="container">
         <div class="sigma_subheader-inner">
             <div class="sigma_subheader-text">
-                <h1>About Us</h1>
-                <p class="text-white mb-0"> Promoting a comprehensive Islamic way of life based on the Holy Quran and
-                    the Sunnah of Prophet Muhammad. </p>
+                <h1>{{$pageInfo->title}}</h1>
+                <p class="text-white mb-0"> {!! $pageInfo->description !!} </p>
             </div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="btn-link" href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                    <li class="breadcrumb-item"><a class="btn-link" href="#">হোম</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{$pageInfo->title}}</li>
                 </ol>
             </nav>
         </div>
@@ -449,7 +448,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 footer-widget">
                     <div class="sigma_footer-logo mb-4">
-                        <img src="assets/img/logo-light.png" alt="logo">
+                        <img src="{{asset('assets/img/logo-light.png')}}" alt="logo">
                     </div>
                     <p class="mb-4">Please write your email and get our amazing updates, news and support. Proin
                         gravida.</p>
@@ -504,47 +503,47 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <a href="#" class="sigma_ig-item">
-                                <img src="assets/img/ig/1.jpg" alt="ig">
+                                <img src="{{asset('assets/img/ig/1.jpg')}}" alt="ig">
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <a href="#" class="sigma_ig-item">
-                                <img src="assets/img/ig/2.jpg" alt="ig">
+                                <img src="{{asset('assets/img/ig/2.jpg')}}" alt="ig">
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <a href="#" class="sigma_ig-item">
-                                <img src="assets/img/ig/3.jpg" alt="ig">
+                                <img src="{{asset('assets/img/ig/3.jpg')}}" alt="ig">
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <a href="#" class="sigma_ig-item">
-                                <img src="assets/img/ig/4.jpg" alt="ig">
+                                <img src="{{asset('assets/img/ig/4.jpg')}}" alt="ig">
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <a href="#" class="sigma_ig-item">
-                                <img src="assets/img/ig/5.jpg" alt="ig">
+                                <img src="{{asset('assets/img/ig/5.jpg')}}" alt="ig">
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <a href="#" class="sigma_ig-item">
-                                <img src="assets/img/ig/6.jpg" alt="ig">
+                                <img src="{{asset('assets/img/ig/6.jpg')}}" alt="ig">
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <a href="#" class="sigma_ig-item">
-                                <img src="assets/img/ig/7.jpg" alt="ig">
+                                <img src="{{asset('assets/img/ig/7.jpg')}}" alt="ig">
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <a href="#" class="sigma_ig-item">
-                                <img src="assets/img/ig/8.jpg" alt="ig">
+                                <img src="{{asset('assets/img/ig/8.jpg')}}" alt="ig">
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <a href="#" class="sigma_ig-item">
-                                <img src="assets/img/ig/9.jpg" alt="ig">
+                                <img src="{{asset('assets/img/ig/9.jpg')}}" alt="ig">
                             </a>
                         </div>
                     </div>
@@ -588,23 +587,23 @@
 <!-- partial -->
 
 <!-- partial:partia/__scripts.html -->
-<script src="assets/js/plugins/jquery-3.4.1.min.js"></script>
-<script src="assets/js/plugins/popper.min.js"></script>
-<script src="assets/js/plugins/bootstrap.min.js"></script>
-<script src="assets/js/plugins/imagesloaded.min.js"></script>
-<script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/plugins/jquery.countdown.min.js"></script>
-<script src="assets/js/plugins/jquery.waypoints.min.js"></script>
-<script src="assets/js/plugins/jquery.counterup.min.js"></script>
-<script src="assets/js/plugins/jquery.zoom.min.js"></script>
-<script src="assets/js/plugins/jquery.inview.min.js"></script>
-<script src="assets/js/plugins/jquery.event.move.js"></script>
-<script src="assets/js/plugins/wow.min.js"></script>
-<script src="assets/js/plugins/isotope.pkgd.min.js"></script>
-<script src="assets/js/plugins/slick.min.js"></script>
-<script src="assets/js/plugins/ion.rangeSlider.min.js"></script>
+<script src="{{asset('assets/js/plugins/jquery-3.4.1.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/popper.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/bootstrap.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/imagesloaded.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.countdown.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.waypoints.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.zoom.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.inview.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.event.move.js')}}"></script>
+<script src="{{asset('assets/js/plugins/wow.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/isotope.pkgd.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/slick.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/ion.rangeSlider.min.js')}}"></script>
 
-<script src="assets/js/main.js"></script>
+<script src="{{asset('assets/js/main.js')}}"></script>
 <!-- partial -->
 
 </body>
